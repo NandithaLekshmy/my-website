@@ -6,7 +6,7 @@ pipeline {
         sleep 20
         echo 'Success!'
         archiveArtifacts(artifacts: 'target/*.jar', fingerprint: true, allowEmptyArchive: true)
-        echo 'I am a ${BUZZ_NAME}'
+        echo 'I am a ${Buzz_name}'
       }
     }
     stage('Test') {
